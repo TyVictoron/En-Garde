@@ -16,6 +16,7 @@
 		10F279712063848A0011E94F /* MPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F279702063848A0011E94F /* MPCManager.swift */; };
 		10F27973206384950011E94F /* DuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F27972206384950011E94F /* DuelViewController.swift */; };
 		10F279752063849C0011E94F /* FindDuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F279742063849C0011E94F /* FindDuelViewController.swift */; };
+		10F27977206388CA0011E94F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F27976206388CA0011E94F /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		10F279702063848A0011E94F /* MPCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCManager.swift; sourceTree = "<group>"; };
 		10F27972206384950011E94F /* DuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelViewController.swift; sourceTree = "<group>"; };
 		10F279742063849C0011E94F /* FindDuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindDuelViewController.swift; sourceTree = "<group>"; };
+		10F27976206388CA0011E94F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F27977206388CA0011E94F /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 			children = (
 				10F2795A206382070011E94F /* En Garde */,
 				10F27959206382070011E94F /* Products */,
+				10F27976206388CA0011E94F /* GoogleMobileAds.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -292,6 +296,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SS74D43GDA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "En Garde/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ty-Victorson.En-Garde";
@@ -307,6 +315,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SS74D43GDA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "En Garde/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Ty-Victorson.En-Garde";
