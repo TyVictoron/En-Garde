@@ -32,6 +32,7 @@
 		10F27972206384950011E94F /* DuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DuelViewController.swift; sourceTree = "<group>"; };
 		10F279742063849C0011E94F /* FindDuelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindDuelViewController.swift; sourceTree = "<group>"; };
 		10F27976206388CA0011E94F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		10F279782064E8A00011E94F /* ArtOfIlluminating.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ArtOfIlluminating.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				10F2795D206382070011E94F /* ViewController.swift */,
 				10F2795F206382070011E94F /* Main.storyboard */,
 				10F27965206382070011E94F /* Assets.xcassets */,
+				10F279782064E8A00011E94F /* ArtOfIlluminating.ttf */,
 				10F27967206382070011E94F /* LaunchScreen.storyboard */,
 				10F2796A206382070011E94F /* Info.plist */,
 				10F27962206382070011E94F /* En_Garde.xcdatamodeld */,
