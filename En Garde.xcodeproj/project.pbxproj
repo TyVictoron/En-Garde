@@ -17,6 +17,7 @@
 		10F27973206384950011E94F /* DuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F27972206384950011E94F /* DuelViewController.swift */; };
 		10F279752063849C0011E94F /* FindDuelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F279742063849C0011E94F /* FindDuelViewController.swift */; };
 		10F27977206388CA0011E94F /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F27976206388CA0011E94F /* GoogleMobileAds.framework */; };
+		10F279792064ECA70011E94F /* ArtOfIlluminating.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10F279782064E8A00011E94F /* ArtOfIlluminating.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -143,6 +144,7 @@
 			files = (
 				10F27969206382070011E94F /* LaunchScreen.storyboard in Resources */,
 				10F27966206382070011E94F /* Assets.xcassets in Resources */,
+				10F279792064ECA70011E94F /* ArtOfIlluminating.ttf in Resources */,
 				10F27961206382070011E94F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
