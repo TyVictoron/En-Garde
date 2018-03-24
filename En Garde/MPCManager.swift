@@ -44,6 +44,8 @@ class MPCManager: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, M
     
     var recevedTime = 0
     
+    var duelsWon = 0
+    
     // set up data for other players to see
     override init() {
         super.init()

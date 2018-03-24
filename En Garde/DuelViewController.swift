@@ -43,7 +43,7 @@ class DuelViewController: UIViewController, GADInterstitialDelegate {
         
         // Remove after testing is done
         let request = GADRequest()
-        request.testDevices = [ kGADSimulatorID , "756b788c48f23c1b559c95e5bd8d9abf" ]
+        //request.testDevices = [ kGADSimulatorID , "756b788c48f23c1b559c95e5bd8d9abf" ]
         
         //interstitial = createAndLoadInterstitial()
         
@@ -117,6 +117,7 @@ class DuelViewController: UIViewController, GADInterstitialDelegate {
                             self.appDelegate.mpcManager.holstered = false
                             self.bgm.stop()
                             svc.duelsWon = self.duelsWon
+                            self.appDelegate.mpcManager.duelsWon = self.duelsWon
                             
                             if self.interstitial.isReady {
                                 self.interstitial.present(fromRootViewController: self)
@@ -138,6 +139,7 @@ class DuelViewController: UIViewController, GADInterstitialDelegate {
                         // shooting stuffs
                         self.shot.play()
                         self.duelsWon += 1
+                        self.appDelegate.mpcManager.duelsWon = self.duelsWon
                         
                         let defaults: UserDefaults = UserDefaults.standard
                         defaults.set(self.duelsWon, forKey: "highScore")
@@ -155,6 +157,8 @@ class DuelViewController: UIViewController, GADInterstitialDelegate {
                             self.appDelegate.mpcManager.holstered = false
                             self.bgm.stop()
                             svc.duelsWon = self.duelsWon
+                            self.appDelegate.mpcManager.duelsWon = self.duelsWon
+                            
                             
                             if self.interstitial.isReady {
                                 self.interstitial.present(fromRootViewController: self)
@@ -195,6 +199,7 @@ class DuelViewController: UIViewController, GADInterstitialDelegate {
                         self.appDelegate.mpcManager.holstered = false
                         self.bgm.stop()
                         svc.duelsWon = self.duelsWon
+                        self.appDelegate.mpcManager.duelsWon = self.duelsWon
                         
                         if self.interstitial.isReady {
                             self.interstitial.present(fromRootViewController: self)

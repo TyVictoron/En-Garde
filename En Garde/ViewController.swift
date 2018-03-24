@@ -75,7 +75,7 @@ class ViewController: UIViewController, MPCManagerDelegate, GKGameCenterControll
         }
         
         // Call the GC authentication controller
-        authenticateLocalPlayer()
+        //authenticateLocalPlayer()
         
         print("Duels Won: ", duelsWon)
     }

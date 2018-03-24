@@ -121,7 +121,7 @@ class FindDuelViewController: UIViewController, MPCManagerDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
-        cell.textLabel!.text! = appDelegate.mpcManager.foundPeers[indexPath.row].displayName
+        cell.textLabel!.text! = appDelegate.mpcManager.foundPeers[indexPath.row].displayName + "\t\t\t Wins: " + String(appDelegate.mpcManager.duelsWon)
         return cell
     }
     
