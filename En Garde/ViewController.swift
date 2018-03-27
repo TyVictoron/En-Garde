@@ -18,7 +18,7 @@ class ViewController: UIViewController, MPCManagerDelegate, GKGameCenterControll
     var gcDefaultLeaderBoard = String() // Check the default leaderboardID
     
     // IMPORTANT: the red string below is Leaderboard ID (the one set in iTunes Connect)
-    let LEADERBOARD_ID = "SquareUpLB.ID"
+    let LEADERBOARD_ID = "EnGardeLB.ID"
     
     @IBOutlet weak var duelsWonLabel: UILabel!
     
@@ -52,32 +52,32 @@ class ViewController: UIViewController, MPCManagerDelegate, GKGameCenterControll
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let defaults: UserDefaults = UserDefaults.standard
-        let savedScore = defaults.integer(forKey: "highScore")
-        duelsWon = savedScore
+//        let defaults: UserDefaults = UserDefaults.standard
+//        let savedScore = defaults.integer(forKey: "highScore")
+//        duelsWon = savedScore
         
         
         
-        duelsWonLabel.text = "Duels Won: \(duelsWon)"
+        duelsWonLabel.text = "Fights Won: \(duelsWon)"
         
         // disconnects session
         appDelegate.mpcManager.session.disconnect()
         
         // Submit score to GC leaderboard
-        let bestScoreInt = GKScore(leaderboardIdentifier: LEADERBOARD_ID)
-        bestScoreInt.value = Int64(duelsWon)
-        GKScore.report([bestScoreInt]) { (error) in
-            if error != nil {
-                print(error!.localizedDescription)
-            } else {
-                print("Best Score submitted to your Leaderboard!")
-            }
-        }
+//        let bestScoreInt = GKScore(leaderboardIdentifier: LEADERBOARD_ID)
+//        bestScoreInt.value = Int64(duelsWon)
+//        GKScore.report([bestScoreInt]) { (error) in
+//            if error != nil {
+//                print(error!.localizedDescription)
+//            } else {
+//                print("Best Score submitted to your Leaderboard!")
+//            }
+//        }
         
         // Call the GC authentication controller
         //authenticateLocalPlayer()
         
-        print("Duels Won: ", duelsWon)
+        print("Wins: ", duelsWon)
     }
     
     func authenticateLocalPlayer() {
@@ -113,11 +113,11 @@ class ViewController: UIViewController, MPCManagerDelegate, GKGameCenterControll
     
     @IBAction func GameCenterButton(_ sender: Any) {
         
-        let gcVC = GKGameCenterViewController()
-        gcVC.gameCenterDelegate = self
-        gcVC.viewState = .leaderboards
-        gcVC.leaderboardIdentifier = LEADERBOARD_ID
-        present(gcVC, animated: true, completion: nil)
+//        let gcVC = GKGameCenterViewController()
+//        gcVC.gameCenterDelegate = self
+//        gcVC.viewState = .leaderboards
+//        gcVC.leaderboardIdentifier = LEADERBOARD_ID
+//        present(gcVC, animated: true, completion: nil)
     }
     
     // both reload the data in the table view

@@ -18,6 +18,9 @@ class FindDuelViewController: UIViewController, MPCManagerDelegate, UITableViewD
     internal func disconnect() {
         print("Disconnected")
         
+    }
+    
+    func reactivateLabels() {
         // incase of connection fail
         self.selectOpponentLabel?.isHidden = false
         self.tableView.isHidden = false
@@ -59,6 +62,7 @@ class FindDuelViewController: UIViewController, MPCManagerDelegate, UITableViewD
     {
         print("lostPeer")
         tableView.reloadData()
+        reactivateLabels()
     }
     
     // if the device can connect to another device create a pop up and allow player to join
