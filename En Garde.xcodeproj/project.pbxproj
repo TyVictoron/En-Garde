@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10486518207252FC004ED177 /* En Garde Icon in Resources */ = {isa = PBXBuildFile; fileRef = 10486517207252FC004ED177 /* En Garde Icon */; };
 		10F2795C206382070011E94F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2795B206382070011E94F /* AppDelegate.swift */; };
 		10F2795E206382070011E94F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F2795D206382070011E94F /* ViewController.swift */; };
 		10F27961206382070011E94F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F2795F206382070011E94F /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10486517207252FC004ED177 /* En Garde Icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "En Garde Icon"; sourceTree = "<group>"; };
 		10F27958206382070011E94F /* En Garde.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "En Garde.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F2795B206382070011E94F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10F2795D206382070011E94F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				10F2795A206382070011E94F /* En Garde */,
 				10F27959206382070011E94F /* Products */,
+				10486517207252FC004ED177 /* En Garde Icon */,
 				10F27976206388CA0011E94F /* GoogleMobileAds.framework */,
 				10F2797C20660F8D0011E94F /* Frameworks */,
 			);
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				10F27969206382070011E94F /* LaunchScreen.storyboard in Resources */,
+				10486518207252FC004ED177 /* En Garde Icon in Resources */,
 				10F27966206382070011E94F /* Assets.xcassets in Resources */,
 				10F279792064ECA70011E94F /* ArtOfIlluminating.ttf in Resources */,
 				10F27961206382070011E94F /* Main.storyboard in Resources */,

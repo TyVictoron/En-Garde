@@ -80,7 +80,7 @@ class FindDuelViewController: UIViewController, MPCManagerDelegate, UITableViewD
             self.tableView.isHidden = true
             self.backDownLabel.isHidden = true
             self.connectingLabel.text = "Connecting"
-            self.connectingLabel.textColor = UIColor.red 
+            self.connectingLabel.textColor = UIColor.red
         }
         
         let decline = UIAlertAction(title: "Decline", style: .default) { (alertAction) in
